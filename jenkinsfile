@@ -16,7 +16,7 @@ stages {
                      cd /tmp
                      touch demo.txt
                      """
-                 },
+                 }
 
                  job2: {
                      sh """
