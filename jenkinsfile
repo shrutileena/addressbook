@@ -4,7 +4,7 @@ pipeline {
             label 'master'
         }
     }
-}
+
 stages {
         stage ('This is demo stage') {
          steps{
@@ -16,7 +16,7 @@ stages {
                      cd /tmp
                      touch demo.txt
                      """
-                 }
+                 },
 
                  job2: {
                      sh """
@@ -40,4 +40,5 @@ stages {
             }
         }
 
+}
 }
