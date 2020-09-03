@@ -24,7 +24,7 @@ pipeline {
 
             steps {
                 bat """
-                mvn Compile
+                mvn compile
                 """ 
             }
 
