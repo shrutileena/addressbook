@@ -25,7 +25,7 @@ stages {
                  
                  }
                 }
-
+            }
         }
 
         stage ('This is demo second stage') {
