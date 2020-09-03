@@ -34,10 +34,6 @@ stages {
             steps{
                 echo "step 1"
             }
-
-            steps{
-                echo "step 2"
-            }
         }
 
 }
