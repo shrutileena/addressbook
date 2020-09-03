@@ -1,0 +1,23 @@
+pipeline {
+    agent {
+        node {
+            label 'Win_NET'
+        }
+    }
+
+    tools {
+
+        maven 'mymaven'
+        jdk 'myjava'
+    }
+
+    stages {
+        stage ('Checkout code from SCM') {
+            steps {
+
+                git branch: 'master', url: 'https://github.com/shrutileena/addressbook.git'
+
+            }
+        }
+    }
+}
