@@ -8,24 +8,14 @@ pipeline {
 stages {
         stage ('This is demo stage') {
          steps{
-                parallel {
-                 job1: {
-            
                     sh """
                     df -h
                     cd /tmp
                     touch demo.txt
                     """
-                 },
-                 job2: {
-                    
-                    sh """
-                    cat etc/passwd
-                    """
-                 
-                 }
+              
                 }
-            }
+    
         }
 
         stage ('This is demo second stage') {
