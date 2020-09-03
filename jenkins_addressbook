@@ -27,7 +27,14 @@ pipeline {
                 mvn compile
                 """ 
             }
-
+        }
+        
+        stage ('packaging') {
+            steps {
+                """
+                mvn package
+                """
+            }
         }
 
     }
