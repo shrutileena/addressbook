@@ -19,10 +19,8 @@ pipeline {
 
             }
         }
-    }
-
-    stages {
-        stage ('Code Compile') {
+        
+         stage ('Code Compile') {
 
             steps {
                 bat """
@@ -31,5 +29,7 @@ pipeline {
             }
 
         }
+
     }
+
 }
